@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Relipark Đăng nhập / Đăng ký</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <div class="container" id="formContainer">
+    <h2 id="formTitle">Đăng nhập</h2>
+    <p class="subtext" id="formSubtitle">Chào mừng bạn quay trở lại hệ thống RELIPARK</p>
+
+    <div class="tabs">
+      <button id="userBtn" class="active">Khách hàng</button>
+      <button id="adminBtn" class="inactive">Nhà quản lý</button>
+    </div>
+
+    <div id="loginForm">
+      <div class="form-group">
+        <span><img src="assets/images/email.png"></span>
+        <input type="text" id="username" placeholder="Email / Số điện thoại">
+      </div>
+      <div class="form-group">
+        <span><img src="assets/images/padlock.png"></span>
+        <input type="password" id="password" placeholder="Mật khẩu">
+        <span><img src="assets/images/hidden.png"></span>
+      </div>
+      <div class="form-options">
+        <span>Nhớ mật khẩu</span>
+        <span>Quên mật khẩu?</span>
+      </div>
+      <div class="toggle-switch" id="rememberToggle"></div>
+      <button class="submit-btn" onclick="handleLogin()">Tiếp tục</button>
+      <div class="switch-link">
+        Bạn chưa có tài khoản?<br>
+        <a href="#" onclick="switchForm('register')">Đăng ký ngay</a>
+      </div>
+    </div>
+
+    <div id="registerForm" class="hidden">
+      <div class="form-group"><span><img src="assets/images/user.png"></span><input type="text" placeholder="Họ và Tên"></div>
+      <div class="form-group"><span><img src="assets/images/email.png"></span><input type="email" placeholder="Email"></div>
+      <div class="form-group"><span><img src="assets/images/phone_call.png"></span><input type="tel" placeholder="Số điện thoại"></div>
+      <div class="form-group"><span><img src="assets/images/padlock.png"></span><input type="password" placeholder="Mật khẩu"><span><img src="assets/images/hidden.png"></span></div>
+      <div class="form-group"><span><img src="assets/images/license-plate.png"></span><input type="text" placeholder="Biển số xe"></div>
+      <button class="submit-btn">Tiếp tục</button>
+      <div class="switch-link">
+        Bạn đã có tài khoản? Đăng nhập ngay!
+        <a href="#" onclick="switchForm('login')">Đăng nhập ngay</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/login_gister.js"></script>
+</body>
+</html>

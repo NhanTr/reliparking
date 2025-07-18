@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RELI PARK</title>
+  <link rel="stylesheet" href="css/manager.css">
+</head>
+<body>
+  <div id="frame22" class="frame active">
+    <div class="card">
+        <div class="header">
+            <img src="assets/images/logo.png" alt="">
+            <button id="toggleButton">keypad</button>
+            <div class="right_side">
+                <div>
+                    <div class="current-date" id="currentDate"></div>
+                    <div class="current-time" id="currentTime"></div>
+                </div>
+                <a href="login_register.html"><img src="assets/images/logout.png" alt=""> </a>
+            </div>  
+        </div>
+        <p><img src="assets/images/rho.png" alt=""> Bãi đỗ xe RL</p>
+        <div class="slot">
+          <div>
+            <button onclick="">A1</button>
+            <button>A2</button>
+            <button>A3</button>
+            <button>A4</button>
+          </div>
+          <div>
+            <h3>Chỗ khả dụng 0/4</h3>
+            <div class="item">
+              <div style="width: 30px; height: 30px; background-color: green;"> </div> 
+              <p>Còn trống</p>
+            </div>
+            <div class="item">
+              <div style="width: 30px; height: 30px; background-color: red"> </div> 
+              <p> Đã đỗ</p>
+            </div>
+          </div>
+        </div>
+        <div class="gate">
+            <div>
+                <h3>Gate 1</h3>
+                <div class="toggle-switch" id="gate1"></div>
+            </div>
+            <div>
+                <h3>Gate 2</h3>
+                <div class="toggle-switch" id="gate2"> </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="history">
+        <h2><img src="assets/images/history.png" alt="">Lịch sử ra/ vào cổng</h2>
+    </div>
+
+  <script src="js/manager.js"></script>
+</body>
+</html>

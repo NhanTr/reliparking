@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Intro Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main_style.css" />
+  <style>
+    html {
+      touch-action: manipulation;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+    body {
+      overscroll-behavior-y: contain;
+    }
+    input, textarea {
+      font-size: 16px; /* Quan trọng cho mobile */
+    }
+  </style>
+</head>
+<body>
+    <div class="intro">
+        <div class="circle" id="circle"></div>
+        <img src="assets/images/logo.png" alt="logo_app" />
+        <p>Smart Parking System</p>
+    </div>
+
+    <div class="info main-content">
+        <img class="home" src="assets/images/home.png" alt="home">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="assets/images/img1.png" alt="Đặt chỗ trước"/>
+                <h2>Đặt chỗ trước</h2>
+                <p>Giữ chỗ bãi đỗ từ xa, đảm bảo luôn có chỗ khi tới nơi</p>
+            </div>
+            <div class="slide">
+                <img src="assets/images/img2.png" alt="Thay đổi linh hoạt"/>
+                <h2>Thay đổi linh hoạt</h2>
+                <p>Cho phép huỷ/đổi miễn phí trong thời gian quy định</p>
+            </div>
+            <div class="slide">
+                <img src="assets/images/img3.png" alt="Lịch sử đỗ xe"/>
+                <h2>Quản lý lịch sử đỗ xe</h2>
+                <p>Xem lại các lần đặt chỗ, thời gian, chi phí nhanh chóng</p>
+            </div>
+            <div class="slide">
+                <img src="assets/images/img4.png" alt="Minh bạch giá cả"/>
+                <h2>Minh bạch giá cả</h2>
+                <p>Hiển thị rõ ràng giá đỗ theo giờ, ngày, loại xe</p>
+            </div>
+            </div>
+            
+        <div class="controls">
+            <div class="dots" id="dots"></div>
+            <button onclick="nextSlide()">Tiếp tục</button> <br>
+            <button class="prev" onclick="prevSlide()">←</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
