@@ -26,7 +26,7 @@ function showSlide(index) {
 function nextSlide() {
   currentSlide = currentSlide + 1;
   if (currentSlide > 3) {
-    window.location.href = '../login_register.html';
+    window.location.href = 'login_register.html';
     return;
   }
   showSlide(currentSlide);
